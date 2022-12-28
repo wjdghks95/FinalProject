@@ -63,6 +63,9 @@
         <link href="../resource/css//headers.css" rel="stylesheet">
         <link href="../resource/css/sidebars.css" rel="stylesheet">
         <link href="../resource/css/footer.css" rel="stylesheet">
+
+        <link href="../resource/css/main.css" rel="stylesheet">
+        <link href="../resource/css/features.css" rel="stylesheet">
         
     </head>
     <body>
@@ -151,11 +154,168 @@
             </div>
         </nav>
 
-        <!-- main -->
-        <main>
-            
-        </main>
+        <!-- 광고 -->
+        <div class="ad container">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                    <img src="../resource/img/sample1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../resource/img/sample1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                    <div class="carousel-item">
+                    <img src="../resource/img/sample1.jpg" class="d-block w-100" alt="...">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
 
+        <!-- 카테고리 -->
+        <div class="container px-4 py-5" id="icon-grid">
+            <h2 class="pb-2 border-bottom">분야로 변호사를 찾으세요.</h2>
+        
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+                <div class="col d-flex align-items-start">
+                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#bootstrap"/></svg>
+                <div>
+                    <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
+                    <p>Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#cpu-fill"/></svg>
+                <div>
+                    <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
+                    <p>Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#calendar3"/></svg>
+                <div>
+                    <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
+                    <p>Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#home"/></svg>
+                <div>
+                    <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
+                    <p>Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#speedometer2"/></svg>
+                <div>
+                    <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
+                    <p>Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#toggles2"/></svg>
+                <div>
+                    <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
+                    <p>Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#geo-fill"/></svg>
+                <div>
+                    <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
+                    <p>Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+                </div>
+                <div class="col d-flex align-items-start">
+                <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em"><use xlink:href="#tools"/></svg>
+                <div>
+                    <h3 class="fw-bold mb-0 fs-4">Featured title</h3>
+                    <p>Paragraph of text beneath the heading to explain the heading.</p>
+                </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- 뉴스 -->
+        <div class="container px-4 py-5" id="custom-cards">
+            <h2 class="pb-2 border-bottom">법률 뉴스</h2>
+            <div class="link-box">
+                <a href="" class="link-info">전체보기</a>
+            </div>
+            <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+                <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-1.jpg');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Short title, long jacket</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                        <small>Earth</small>
+                        </li>
+                        <li class="d-flex align-items-center">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                        <small>3d</small>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                </div>
+        
+                <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-2.jpg');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Much longer title that wraps to multiple lines</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                        <small>Pakistan</small>
+                        </li>
+                        <li class="d-flex align-items-center">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                        <small>4d</small>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                </div>
+        
+                <div class="col">
+                <div class="card card-cover h-100 overflow-hidden text-bg-dark rounded-4 shadow-lg" style="background-image: url('unsplash-photo-3.jpg');">
+                    <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+                    <h3 class="pt-5 mt-5 mb-4 display-6 lh-1 fw-bold">Another longer title belongs here</h3>
+                    <ul class="d-flex list-unstyled mt-auto">
+                        <li class="me-auto">
+                        </li>
+                        <li class="d-flex align-items-center me-3">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#geo-fill"/></svg>
+                        <small>California</small>
+                        </li>
+                        <li class="d-flex align-items-center">
+                        <svg class="bi me-2" width="1em" height="1em"><use xlink:href="#calendar3"/></svg>
+                        <small>5d</small>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
 
         <!-- footer -->
         <div class="footer-container">
