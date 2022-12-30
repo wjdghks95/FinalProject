@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/resource/css/reviewpage.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="card">
+      <div class="profile">
+        <img src="https://i.imgur.com/xELPaag.jpg" width="100" class="pic" />
+
+        <div class="rating">
+          <input type="radio" name="rating" value="5" id="5" /><label for="5"
+            >☆</label
+          >
+          <input type="radio" name="rating" value="4" id="4" /><label for="4"
+            >☆</label
+          >
+          <input type="radio" name="rating" value="3" id="3" /><label for="3"
+            >☆</label
+          >
+          <input type="radio" name="rating" value="2" id="2" /><label for="2"
+            >☆</label
+          >
+          <input type="radio" name="rating" value="1" id="1" /><label for="1"
+            >☆</label
+          >
+        </div>
+      </div>
+      <div class="question-wrap">
+        <p class="question-top">
+          변호사 의 대한 <span class="point-bold">솔직한 리뷰</span>를
+          작성해보세요
+        </p>
+      </div>
+      <div class="comment-area">
+        <div class="title-wrap">
+          <div class="title">
+            제목
+            <span class="pont-title"
+              >(10자 이상
+              <span class="pont-color">*</span>
+              )
+            </span>
+          </div>
+        </div>
+        <textarea
+          class="text-form1"
+          placeholder="제목을 작성해주세요."
+        ></textarea>
+      </div>
+      <div class="form-middle"></div>
+      <div class="title">
+        내용
+        <span class="pont-title"
+          >(500자 이상
+          <span class="pont-color">*</span>
+          )
+        </span>
+      </div>
+
+      <textarea
+        class="text-form2"
+        placeholder="내용을 작성해주세요."
+      ></textarea>
+
+      <div class="warning">
+        <p class="warning-top">리뷰 등록 전 반드시 확인해주세요!</p>
+        <ul class="list1">
+          <li class="question-notice">
+            리뷰글 제목은
+            <span class="bold">적합한 내용을로 일부 변경</span>될수있습니다
+          </li>
+          <li class="question-notice">
+            게시글의 <span class="bold"> 수정 및 삭제</span>가 불가합니다
+          </li>
+          <li class="question-notice">
+            등록된 리뷰 글은
+            <span class="bold"
+              >네이버 지식인, 포털 사이트, 로톡 사이트에 내용이 공개</span
+            >
+            됩니다.
+          </li>
+          <li class="question-notice">
+            아래 사항에 해당할 경우,
+            <span class="bold">서비스 이용이 제한</span>될 수 있습니다.
+          </li>
+          <li class="question-notice">
+            개인정보(개인/법인 실명, 전화번호, 주민번호, 주소, 아이디 등) 및
+            외부 링크가 포함된 경우
+          </li>
+          <div class="notice-wrap">
+            <ul class="list1">
+              <li class="question-notice2">
+                변호사 선임 및 변호사 선임 비용과 관련된 질문인 경우
+              </li>
+              <li class="question-notice2">
+                법률 문제 해결을 목적으로 작성한 상담글이 아닌 경우
+              </li>
+              <li class="question-notice2">
+                동일/유사한 내용의 게시물을 지속적으로 반복 게재하는 경우
+              </li>
+              <li class="question-notice2">의미없는 문자의 나열인 경우</li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+      <div class="agree-box">
+        <input type="checkbox" />
+        <label for="noticeAgreement" class="check-agree"
+          >안내 사항을 모두 확인했으며, 동의합니다.</label
+        >
+      </div>
+      <div class="container">
+        <section class="content">
+          <button
+            class="button button--winona button--border-thick button--round-l button--text-upper button--size-s button--text-thick"
+            type="reset"
+            data-text="취소하기"
+          >
+            <span>취소하기</span>
+          </button>
+          <button
+            class="button button--winona button--border-thick button--round-l button--text-upper button--size-s button--text-thick"
+            type="submit"
+            data-text="작성하기"
+          >
+            <span>작성하기</span>
+          </button>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
