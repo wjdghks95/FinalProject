@@ -6,7 +6,6 @@
         <title>변호사 101</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" defer></script>
-
         <style>
             .bd-placeholder-img {
                 font-size: 1.125rem;
@@ -47,7 +46,6 @@
                 height: 2.75rem;
                 overflow-y: hidden;
             }
-
             .nav-scroller .nav {
                 display: flex;
                 flex-wrap: nowrap;
@@ -58,12 +56,26 @@
                 white-space: nowrap;
                 -webkit-overflow-scrolling: touch;
             }
+            
+            @import url('https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap');
         </style>
+
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
         <link href="../resource/css//headers.css" rel="stylesheet">
         <link href="../resource/css/sidebars.css" rel="stylesheet">
         <link href="../resource/css/footer.css" rel="stylesheet">
-        
+        <link href="../resource/css/booking.css" rel="stylesheet">
+        <link href="../resource/js/booking.js" rel="stylesheet">     
+        <!-- <script type="text/javascript">
+            const myModal = document.getElementById('myModal')
+            const myInput = document.getElementById('myInput')
+
+            myModal.addEventListener('shown.bs.modal', () => {
+              myInput.focus()
+            })
+        </script> -->
+
     </head>
     <body>
         <!-- header -->
@@ -150,13 +162,108 @@
                 </div>
             </div>
         </nav>
-
         <!-- main -->
-        <main>
-            
-        </main>
+        <div class="container" id="main">
+            <div class="position-relative mt-5 m-5 mx-auto " id="progressBar">
+                <div class="progress" style="height: 1px;">
+                  <div class="progress-bar" role="progressbar" aria-label="Progress" style="width: 0%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">1</button>
+                <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-secondary rounded-pill" style="width: 2rem; height:2rem;">2</button>
+                <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill" style="width: 2rem; height:2rem;">3</button>
+            </div>
+
+            <!-- calendar  -->
+ 
+            <div class="w-50 m-auto">
+              <button type="button" class="btn btn-primary">상담 내용 작성하기</button> 
+            </div>
 
 
+
+
+
+
+
+
+            <!-- 모달 -->
+            <a id="question" data-bs-toggle="modal" data-bs-target="#exampleModal" class="">혹시 해외에서 이용 중이신가요?</a>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- info -->
+            <div class="accordion w-50 m-auto" id="accordionPanelsStayOpenExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                      변호사 정보
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                    <div class="accordion-body">
+                      <table class="table table-borderless" w-50 mt-2">
+                          <tr>
+                            <td>변호사</td>
+                            <td>우영우</td>
+                          </tr>
+                          <tr>
+                            <td>법률사무소</td>
+                            <td>황금망치법률사무소</td>
+                          </tr>
+                          <tr>
+                            <td>주소</td>
+                            <td>서울특별시 사랑구 행복동 망치빌딩 302호</td>
+                          </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                      상담 정보 
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                    <div class="accordion-body">
+                      예약한 날짜에 변호사와 채팅으로 상담이 진행 됩니다. <br>
+                      예약 시 작성한 상담글을 변호사가 사전검토합니다.<br>
+                      상담예약 및 작성한 상담내용은 <strong>‘변호사의 비밀유지’</strong>에 의해 비밀보호됩니다.<br>
+                      계약서 검토, 자문 등의 추가적인 법률 서비스는 추가 상담료가 발생할 수 있습니다.<br>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                      예약취소 및 환불 규정
+                    </button>
+                  </h2>
+                  <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                    <div class="accordion-body">
+                      예약 날짜 및 시간 변경, 예약 취소는 <strong>3일 전</strong>까지만 마이페이지에서 취소 가능하며, 이후에는 취소 및 환불이 불가능합니다. <br>
+                      변호사 사정으로 상담을 하지 못한 경우에는 100% 환불해드립니다. <br>
+                      의뢰인 사정으로 상담을 하지 못한 경우 또는 상담이 이루어진 경우에는 환불해드리지 않습니다. <br>
+                    </div>
+                  </div>
+                </div>
+              </div>            
         <!-- footer -->
         <div class="footer-container">
             <footer class="py-3 my-4">
