@@ -1,0 +1,35 @@
+*{
+    margin: 0 auto;
+}
+
+.counseldiv{
+    text-align: center;
+    vertical-align:middle;
+    height: 50px;
+    line-height: 75px;
+    background-color: lightgray;
+}
+
+.counseldiv>a{
+    margin-left: 40px;
+    text-decoration: none;
+    color: black; 
+    
+}
+.counselfooter{
+    
+}
+.counseldiv2{
+    text-align: start;
+}
+.counseltable{
+    margin-left: 0;
+}
+.counseltr>td>a{
+    text-decoration: none;
+    color: black;
+    margin-left: 30px;
+}
+.counseltd{
+    margin-left: 30px;
+}   

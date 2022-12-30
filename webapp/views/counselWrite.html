@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" defer></script>
+    <link rel="stylesheet" href="../resource/css/counselWrite.css">
+    <link href="../resource/css/footer.css" rel="stylesheet">
+    <link href="../resource/css//headers.css" rel="stylesheet">
+</head>
+<body>
+    <!-- header -->
+    <header class="p-3 text-bg-dark">
+        <div class="container">
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+            </a>
+
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+            </ul>
+            </div>
+        </div>
+    </header>
+    <!-- main -->
+    <h1 align = "center" id="counselWriteh1">상담글 쓰기</h1>
+    <hr id="counselWritehr1">
+    <div id="counselWriteDiv" align = "center">
+        <h2 id="counselWriteh2">상담글을 작성하고<br>무료로 변호사의 답변을 받으세요</h2>
+        <form action="" id="counselWriteForm">
+            <table class="counselWriteTable">
+                <tr>
+                    <td>제목(10자이상) <br><input type="text" style="width: 800px; height: 35px;" placeholder="제목을 작성해주세요"></td>
+                </tr>
+                <tr>
+                    <td>내용(20자이상) <br><input type="text" style="width: 800px; height: 120px;" placeholder="내용을 작성해주세요"></td>
+                    
+                </tr>   
+                <hr> 
+            </table>
+            <div class="counselWriteDivin"  align = "start">
+                <h3 id="counselWriteh3">상담글 등록전 반드시 확인해주세요!</h3>
+                <ul class="counselWriteUl">
+                    <li>상담글 제목은 상담받기에 적절한 제목으로 일부 변경될 수 있습니다.</li>
+                    <li>상담글에 변호사의 답변 등록 시 글 삭제가 불가합니다.</li>
+                    <li>등록된 글은 네이버지식인, 포털사이트, 로톡 사이트에 내용이 공개됩니다.</li>
+                    <li>
+                        아래 사항에 해당할 경우 서비스 이용이 제한될 수 있습니다.
+                        <ul class="counselWriteUlIn">
+                            <li>개인정보(개인/법인 실명, 전화번호, 주민번호, 주소, 아이디 등) 및 외부 링크가 포함된 경우</li>
+                            <li>변호사 선임 및 변호사 선임 비용과 관련된 질문인 경우</li>
+                            <li>법률 문제 해결을 목적으로 작성한 상담글이 아닌 경우</li>
+                            <li>동일/유사한 내용의 게시물을 지속적으로 반복 게재하는 경우</li>
+                            <li>의미없는 문자의 나열인 경우</li>
+                        </ul>
+                    </li>
+                </ul>
+                <input type="checkbox" name="" id="">  안내사항을 모두 확인했으며, 동의합니다.
+            </div> 
+            <input type="button" value="상담글 등록하기" id="counselWriteInput">
+        </form>
+    </div>
+
+    <!-- footer -->
+    <div class="footer-container">
+        <footer class="py-3 my-4">
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+            </ul>
+            <p class="text-center text-muted">&copy; 2022 Company, Inc</p>
+        </footer>
+    </div>
+</body>
+</html>
