@@ -12,40 +12,35 @@
     <link rel="stylesheet" href="../resource/css/headers.css">
     <link rel="stylesheet" href="../resource/css//sidebars.css">
     <link rel="stylesheet" href="../resource/css/footer.css">
+    <link rel="stylesheet" href="../resource/css/common.css">
+    
     <link rel="stylesheet" href="../resource/css/chatList.css">
 </head>
 <body>
     <!-- header -->
-    <header class="p-3 text-bg-dark py-4 position-sticky top-0">
+    <header class="p-3 text-bg-dark position-sticky top-0">
         <div class="container">
-            <div class="d-flex flex-wrap align-items-center justify-content-between">
-                <button class="bg-transparent text-light border-0">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
-                        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-                    </svg>
-                </button>
+            <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+                <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><use xlink:href="#bootstrap"/></svg>
+            </a>
 
-                <a href="" class="position-absolute start-50 translate-middle-x">
-                    <img src="../resource/img/logo.png" alt="로고" width="240px" height="60px">
-                </a>
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#" class="nav-link px-2 text-secondary">Home</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">Features</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+            </ul>
 
-                <div class="d-flex align-items-center">
-                    <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
-                        <div class="position-relative">
-                            <input type="search" class="form-control pe-4 form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
-                            <button type="submit" class="me-1 bg-transparent border-0 text-white position-absolute end-0 top-50 translate-middle-y">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                                </svg>
-                            </button>
-                        </div>
-                    </form>
+            <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3" role="search">
+                <input type="search" class="form-control form-control-dark text-bg-dark" placeholder="Search..." aria-label="Search">
+            </form>
 
-                    <div class="text-end">
-                        <button type="button" class="btn btn-outline-light me-2" onclick="location.href='login.html'">로그인</button>
-                        <button type="button" class="btn btn-warning" onclick="location.href='sign-up-landing.html'">회원가입</button>
-                    </div>
-                </div>
+            <div class="text-end">
+                <button type="button" class="btn btn-outline-light me-2">Login</button>
+                <button type="button" class="btn btn-warning">Sign-up</button>
+            </div>
             </div>
         </div>
     </header>

@@ -4,14 +4,6 @@ body {
     background-color: #f5f5f5;
 }
 
-a {
-    text-decoration: none;
-}
-
-ul {
-    list-style: none;
-}
-
 .form-signup {
     max-width: 440px;
 }
