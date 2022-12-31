@@ -28,3 +28,17 @@ input::-webkit-search-results-button,
 input::-webkit-search-results-decoration{
 	display:none;
 }
+
+header .nav a:not(:last-child):hover {
+  color: #525252 !important
+}
+
+input[type='search'] {
+  border: none;
+  border-radius: 0;
+  border-bottom: 3px solid #808080;
+}
+
+input[type='search']::placeholder {
+  color: #808080;
+}
