@@ -104,55 +104,94 @@
 
     <div class="main">
         <div class="w-50 mx-auto">
-            <h2 class="pt-5 pb-4 text-center">채팅 목록</h2>
+            <h2 class="pt-5 pb-4 text-center">상담 목록</h2>
             <div class="pb-5">
-                <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white">
-                    <div class="list-group list-group-flush border-bottom scrollarea">
-                        <a href="#" class="list-group-item list-group-item-action py-3 lh-sm" aria-current="true">
-                            <div class="d-flex w-100 align-items-center justify-content-between">
-                                <div class="d-flex">
-                                    <img src="../resource/img/profile.png" alt="" width="36px" height="36px">
-                                    <div class="ms-2">
-                                        <strong class="mb-1">우영우 변호사</strong>
-                                        <div class="small">한바다 법무법인</div>
+                <p class="fw-bold">상담 진행중</p>
+                <div class="d-flex flex-column align-items-stretch flex-shrink-0">
+                    <div class="list-group list-group-flush scrollarea">
+                        <div class="d-flex align-items-center">
+                            <a href="chat.html" class="list-group-item list-group-item-action py-3 lh-sm me-3" aria-current="true">
+                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                    <div class="d-flex w-50">
+                                        <img src="../resource/img/profile.png" alt="" width="36px" height="36px">
+                                        <div class="ms-2">
+                                            <strong class="mb-1">우영우 변호사</strong>
+                                            <div class="small">한바다 법무법인</div>
+                                        </div>
+                                    </div>
+                                    <small class="fw-bold text-success">상담중</small>
+                                    <div>
+                                        <div class="small text-muted">예약일</div>
+                                        <div class="small text-muted">2022-12-31</div>
                                     </div>
                                 </div>
-                                <div>
-                                    <div class="small text-muted">예약일</div>
-                                    <div class="small text-muted">2022-12-31</div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action py-3 lh-sm" aria-current="true">
-                            <div class="d-flex w-100 align-items-center justify-content-between">
-                                <div class="d-flex">
-                                    <img src="../resource/img/profile.png" alt="" width="36px" height="36px">
-                                    <div class="ms-2">
-                                        <strong class="mb-1">이순진 변호사</strong>
-                                        <div class="small">황금망치 법률사무소</div>
+                            </a>
+                            <button class="btn btn-danger btn-sm" style="width: 90px; height: 30px;" disabled>환불신청</button>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <a href="chat.html" class="list-group-item list-group-item-action py-3 lh-sm me-3" aria-current="true">
+                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                    <div class="d-flex w-50">
+                                        <img src="../resource/img/profile.png" alt="" width="36px" height="36px">
+                                        <div class="ms-2">
+                                            <strong class="mb-1">이순진 변호사</strong>
+                                            <div class="small">황금망치 법률사무소</div>
+                                        </div>
+                                    </div>
+                                    <small class="fw-bold text-danger">상담전</small>
+                                    <div>
+                                        <div class="small text-muted">예약일</div>
+                                        <div class="small text-muted">2023-01-11</div>
                                     </div>
                                 </div>
-                                <div>
-                                    <div class="small text-muted">예약일</div>
-                                    <div class="small text-muted">2023-01-11</div>
-                                </div>
-                            </div>
-                        </a>
-                        <a href="#" class="list-group-item list-group-item-action py-3 lh-sm" aria-current="true">
-                            <div class="d-flex w-100 align-items-center justify-content-between">
-                                <div class="d-flex">
-                                    <img src="../resource/img/profile.png" alt="" width="36px" height="36px">
-                                    <div class="ms-2">
-                                        <strong class="mb-1">오진매 변호사</strong>
-                                        <div class="small">오뚜기 법무법인</div>
+                            </a>
+                            <button class="btn btn-danger btn-sm" style="width: 90px; height: 30px;">환불신청</button>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <a href="chat.html" class="list-group-item list-group-item-action py-3 lh-sm me-3" aria-current="true">
+                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                    <div class="d-flex w-50">
+                                        <img src="../resource/img/profile.png" alt="" width="36px" height="36px">
+                                        <div class="ms-2">
+                                            <strong class="mb-1">오진매 변호사</strong>
+                                            <div class="small">오뚜기 법률사무소</div>
+                                        </div>
+                                    </div>
+                                    <small class="fw-bold text-danger">상담전</small>
+                                    <div>
+                                        <div class="small text-muted">예약일</div>
+                                        <div class="small text-muted">2023-01-15</div>
                                     </div>
                                 </div>
-                                <div>
-                                    <div class="small text-muted">예약일</div>
-                                    <div class="small text-muted">2023-01-15</div>
+                            </a>
+                            <button class="btn btn-danger btn-sm" style="width: 90px; height: 30px;">환불신청</button>
+                        </div>           
+                    </div>
+                </div>
+            </div>
+            <div class="pb-5">
+                <p class="fw-bold">상담 완료</p>
+                <div class="d-flex flex-column align-items-stretch flex-shrink-0">
+                    <div class="list-group list-group-flush scrollarea">
+                        <div class="d-flex align-items-center">
+                            <a href="#" onclick="return false;" class="list-group-item list-group-item-action py-3 lh-sm me-3 bg-body-secondary" aria-current="true">
+                                <div class="d-flex w-100 align-items-center justify-content-between">
+                                    <div class="d-flex w-50">
+                                        <img src="../resource/img/profile.png" alt="" width="36px" height="36px">
+                                        <div class="ms-2">
+                                            <strong class="mb-1">태수미 변호사</strong>
+                                            <div class="small">태산 법무법인</div>
+                                        </div>
+                                    </div>
+                                    <small class="fw-bold text-secondary">상담완료</small>
+                                    <div>
+                                        <div class="small text-muted">예약일</div>
+                                        <div class="small text-muted">2022-12-25</div>
+                                    </div>
                                 </div>
-                            </div>
-                        </a>
+                            </a>
+                            <div style="width: 90px;"></div>
+                        </div> 
                     </div>
                 </div>
             </div>
