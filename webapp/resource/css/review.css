@@ -3,7 +3,6 @@
 html,
 body {
   /* height: 100%; */
-  overflow-y: hidden;
 }
 
 body {
@@ -42,7 +41,7 @@ body {
   background-color: #fff;
   border-color: #ffffff;
   outline: 0;
-  box-shadow: 0 0 0 1px #f50 !important;
+  box-shadow: 0 0 0 1px #00bbff !important;
 }
 .text-form1 {
   width: 100%;
@@ -74,7 +73,7 @@ body {
   position: relative;
   width: 19px;
   font-size: 25px;
-  color: #f50;
+  color: #ffc107;
   cursor: pointer;
 }
 
@@ -142,14 +141,14 @@ body {
 }
 
 .point-bold {
-  color: #f50;
+  color: #00bbff;
 }
 .list1 {
   margin-left: 0px;
   padding-left: 10px;
 }
 .pont-color {
-  color: #f50;
+  color: #dc3545;
 }
 .title-wrap {
   height: 44px;
@@ -288,7 +287,7 @@ body {
 /* Borders */
 
 .button--border-thick {
-  border: 2px solid #f50;
+  border: 2px solid #00bbff;
 }
 
 /* Winona */
@@ -308,7 +307,7 @@ body {
   top: 0;
   left: 0;
   opacity: 0;
-  color: #f50;
+  color: #00bbff;
   -webkit-transform: translate3d(0, 25%, 0);
   transform: translate3d(0, 25%, 0);
 }
@@ -331,7 +330,7 @@ body {
   transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
 }
 .button--winona:hover {
-  border-color: #f50;
+  border-color: #00bbff;
   background-color: white(63, 81, 181, 0.1);
 }
 
