@@ -3,80 +3,16 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>변호사 101</title>
+        <title>결제하기</title>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" defer></script>
-
-
-        <style>
-
-            .bd-placeholder-img {
-                font-size: 1.125rem;
-                text-anchor: middle;
-                -webkit-user-select: none;
-                -moz-user-select: none;
-                user-select: none;
-            }
-
-            @media (min-width: 768px) {
-                .bd-placeholder-img-lg {
-                font-size: 3.5rem;
-                }
-            }
-
-            .b-example-divider {
-                height: 3rem;
-                background-color: rgba(0, 0, 0, .1);
-                border: solid rgba(0, 0, 0, .15);
-                border-width: 1px 0;
-                box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-            }
-
-            .b-example-vr {
-                flex-shrink: 0;
-                width: 1.5rem;
-                height: 100vh;
-            }
-
-            .bi {
-                vertical-align: -.125em;
-                fill: currentColor;
-            }
-
-            .nav-scroller {
-                position: relative;
-                z-index: 2;
-                height: 2.75rem;
-                overflow-y: hidden;
-            }
-
-            .nav-scroller .nav {
-                display: flex;
-                flex-wrap: nowrap;
-                padding-bottom: 1rem;
-                margin-top: -1px;
-                overflow-x: auto;
-                text-align: center;
-                white-space: nowrap;
-                -webkit-overflow-scrolling: touch;
-            }
-/* 
-            body{
-
-                font-family: 'Gowun Batang', serif;
-            } */
-        </style>
-      
-        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <!-- <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet"> -->
 
         <link href="../resource/css//headers.css" rel="stylesheet">
         <link href="../resource/css/sidebars.css" rel="stylesheet">
         <link href="../resource/css/footer.css" rel="stylesheet">
-        <link href="../resource/css/checkInfo.css" rel="stylesheet">
+        <link href="../resource/css/common.css" rel="stylesheet">
 
+        <link href="../resource/css/checkInfo.css" rel="stylesheet">
         <script src="../resource/js/checkInfo.js"> </script>
         
     </head>
@@ -198,44 +134,50 @@
                     </nav>
                     <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" class="scrollspy-example bg-light p-3 rounded-2" tabindex="0">
                         <div class="m-4">
-                            <h4 id="scrollspyHeading1"><b>상담 정보</b></h4>
-                            <table id="table1">
+                            <h4 id="scrollspyHeading1" class="fs-5"><b>상담 정보</b></h4>
+                            <table id="table1" class="w-50">
                                 <tr>
                                     <th style="width: 30%" >변호사</th>
                                     <td>우영우</td>
                                 </tr>
                                 <tr>
-                                    <th>상담 날짜</th>
+                                    <th style="width: 30%">상담 날짜</th>
                                     <td>2023.03.05</td>
                                 </tr>
                                 <tr>
-                                    <th>상담 종류</th>
+                                    <th style="width: 30%">상담 종류</th>
                                     <td>산재</td>
                                 </tr>               
                             </table>
                         </div>
                         <hr>
                         <div class="m-4">
-                            <h4 id="scrollspyHeading2"><b>결제 수단</b></h4>
+                            <h4 id="scrollspyHeading2" class="fs-5"><b>결제 수단</b></h4>
                             <form action="#" method="#" name="#">
                                 <ul>
                                     <li>
-                                        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" checked> &nbsp; 신용카드/체크카드
+                                        <label class="form-label">
+                                            <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" checked> &nbsp; 신용카드/체크카드
+                                        </label>
                                     </li>
                                     <li>
-                                        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" > &nbsp; 카카오 페이 결제
+                                        <label class="form-label">
+                                            <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" > &nbsp; 카카오 페이 결제
+                                        </label>
                                     </li>
                                     <li>
-                                        <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" > &nbsp; 네이버 페이 결제
+                                        <label class="form-label">
+                                            <input class="form-check-input" type="radio" name="radioNoLabel" id="radioNoLabel1" value="" > &nbsp; 네이버 페이 결제
+                                        </label>
                                     </li>
                                 </ul>
                             </form>
                         </div>                
                         <hr>
                         <div class="m-4">
-                            <h4 id="scrollspyHeading3"><b>결제 정보</b></h4>
-                            <p>
-                                <h5>상담료 <b>25,000원</b></h5><br>
+                            <h4 id="scrollspyHeading3" class="fs-5 mb-3"><b>결제 정보</b></h4>
+                            <h5 class="mb-3">상담료 <b>25,000원</b></h5>
+                            <p class="small mb-2 text-secondary">
                             예약취소는 15분 전화상담 1시간 전까지만 마이페이지에서 취소 가능하며, 이후에는 취소 및 환불이 불가능합니다.<br/>
                             예약날짜 및 시간변경은 15분 전화상담 1시간 전까지만 가능하며, 로톡 고객센터로 문의주시면 됩니다.<br/>
                             변호사 사정으로 상담을 하지 못한 경우에는 100% 환불해드립니다.<br/>
@@ -244,14 +186,13 @@
                         </div>
                         <hr>
                         <div class="m-4">
-                            <h4 id="scrollspyHeading4"><b>약관 동의</b></h4>
-                            <p>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onClick="btnActive(this.form)">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        <h5>아래 약관에 동의 합니다.</h5> 
-                                    </label>
-                                    <br>
+                            <h4 id="scrollspyHeading4" class="fs-5"><b>약관 동의</b></h4>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" onClick="btnActive(this.form)">
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    <p class="mb-2">아래 약관에 동의 합니다.</p> 
+                                </label>
+                            <p class="small text-secondary">
                                 '법률 서비스101' 은 예약 및 결제 정보의 중개서비스 또는 통신판매중개 시스템을 제공할 뿐 통신판매의 당사자가 아니며, 변호사가 제공하는 법률상담의 내용과 질에 대해서 법적 책임이 없음에 동의합니다.<br/>
                                     변호사와의 법률상담에 관하여 다음에 동의합니다.<br/>
                                     상담을 위해 작성한 이름과 상담요청내용, 전화번호가 변호사에게 제공됨에 동의합니다.<br/>
@@ -268,8 +209,9 @@
                         </div>
                     </div>
             </div>
-            <div align="right">
-                <input type="button" class="btn btn-primary mt-4" name="checkButton" value="제출하기" disabled></input>
+            <div class="d-flex justify-content-between">
+                <input type="button" class="btn btn-custom mt-4" name="checkButton" value="뒤로" onclick="history.back(-1)"></input>
+                <input type="submit" class="btn btn-custom mt-4" name="checkButton" value="제출하기" disabled></input>
             </div>            
             </form> 
         </div>

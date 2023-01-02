@@ -89,3 +89,22 @@ ul {
     background-color: #00b4f5 !important;
     color: #fff;
 }
+
+.btn-custom:disabled {
+    border: 1px solid #d7d7d7;
+    background-color: #00b4f5 !important;
+    color: #fff !important;
+}
+
+.btn-custom:active {
+    color: #fff !important;
+}
+
+.nav-link {
+    color: #00b4f5;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #00b4f5;
+}
