@@ -58,12 +58,11 @@ main {
   overflow-y: auto;
 }
 
-.sidebar-container {
+.nav-link:hover {
+  color: #464646 !important;
+  font-weight: bold;
+}
+
+.sidebar {
   display: none;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100vh;
-  width: 280px;
-  z-index: 9999;
 }

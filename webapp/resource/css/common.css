@@ -57,3 +57,11 @@ a {
 ul {
     list-style: none;
 }
+
+.bg-info {
+    background-color: #00bbff !important;
+}
+
+.text-info {
+    color: #00bbff !important;
+}
