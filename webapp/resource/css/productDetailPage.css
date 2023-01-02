@@ -1,0 +1,143 @@
+* {
+  text-decoration: none !important;
+  color: black !important;
+  font-size: 14px;
+}
+.productDetailDiv {
+  margin: 0;
+}
+.productDetailPage {
+  width: 800px;
+  margin-top: 50px;
+  margin-left: 250px;
+}
+.productDetailPage h1{
+  margin-bottom: 30px;
+}
+.productDetailDiv table{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.divproductDetailPagetable10{
+  margin-bottom: 30px;
+}
+.productDetailPage1 {
+  position: fixed;
+  width: 700px;
+  top: 80px;
+  left: 1300px;
+}
+
+.productDetailDiv {
+  display: flex;
+  justify-content: center;
+  padding-left: 30px;
+}
+.productDetailPagetable {
+  display: flex;
+  margin-left: 100px;
+  border-collapse: separate;
+  border-spacing: 10px;
+}
+.productDetailPagetabletr{
+  font-size: 22px !important;
+}
+.productDetailPagetable1 {
+  margin-left: 100px;
+}
+
+.productDetailPagetable3{
+  margin-left: 70px;
+}
+
+.productDetailPagetable4{
+  border-collapse: separate;
+  border-spacing: 20px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.productDetailPagetable5{
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border-collapse: separate;
+  border-spacing: 20px;
+}
+.divproductDetailPagetable5{
+  text-align: start;
+}
+.productDetailPagetable6{
+  text-align: center;
+}
+.productDetailPagetable6{
+  border-collapse: separate;
+  border-spacing: 20px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+  text-align: start;
+}
+.divproductDetailPagetable7{
+  text-align: start;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.productDetailPagetable7{
+  border-collapse: separate;
+  border-spacing: 30px;
+  display: flex;
+  justify-content: center;
+}
+.divproductDetailPagetable8{
+  text-align: start;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.divproductDetailPagetable8in{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  height: 150px;
+}
+.divproductDetailPagetable8in1{
+  border-collapse: separate;
+  border-spacing: 30px;
+}
+
+.divproductDetailPagetable9{
+  text-align: start;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.divproductDetailPagetable9 h3{
+  margin-bottom: 20px;
+}
+.productDetailPagetable9{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 1px solid black;
+  height: 90px;
+  align-items: center;
+  margin-top: 10px;
+}
+.divproductDetailPagetable10{
+  text-align: start;
+  margin-top: 50px;
+}
+
+.productDetailPagetable2 tr img {
+  margin-top: 30px;
+  margin-left: 60px;
+}
+.productDetailPagetable4 tr h6 {
+  margin-left: 100px;
+  margin-bottom: 30px;
+}
+.productDetailPagetable3 tr td {
+  margin-left: 100px;
+}
+.footer-container{
+  width: 1200px;
+}
