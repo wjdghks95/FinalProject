@@ -1,145 +1,74 @@
-document.addEventListener('DOMContentLoaded', function() {
-    var calendarEl = document.getElementById('calendar');
-    var calendar = new FullCalendar.Calendar(calendarEl, {
-        // Tool Bar 목록 document : https://fullcalendar.io/docs/toolbar
-        headerToolbar: {
-            left: 'prevYear,prev,next,nextYear today',
-            center: 'title',
-            right: 'dayGridMonth,dayGridWeek,dayGridDay'
-        },
+$(function() {
+    const date = new Date();
+    const calendarYear = date.getFullYear(); // 달력 연도
+    const calendarMonth = date.getMonth() + 1; // 달력 월
+    const calendarToday = date.getDate(); // 달력 일
 
-        selectable: true,
-        selectMirror: true,
+    const monthLastDate = new Date(calendarYear, calendarMonth, 0); 
+    const calendarMonthLastDate = monthLastDate.getDate(); // 달력 월의 마지막 일
+    const prevMonthLastDate = new Date(calendarYear, calendarMonth - 1, 0); // 달력 이전 월의 마지막 일
+    const nextMonthStartDate = new Date(calendarYear, calendarMonth, 1); // 달력 다음 월의 시작 일
+    const calendarMonthTodayDay = date.getDay(); // 달력 현재 요일
 
-        navLinks: true, // can click day/week names to navigate views
-        editable: true,
-        // Create new event
-        select: function (arg) {
-            Swal.fire({
-                html: "<div class='mb-7'>Create new event?</div><div class='fw-bold mb-5'>Event Name:</div><input type='text' class='form-control' name='event_name' />",
-                icon: "info",
-                showCancelButton: true,
-                buttonsStyling: false,
-                confirmButtonText: "Yes, create it!",
-                cancelButtonText: "No, return",
-                customClass: {
-                    confirmButton: "btn btn-primary",
-                    cancelButton: "btn btn-active-light"
-                }
-            }).then(function (result) {
-                if (result.value) {
-                    var title = document.querySelector("input[name=;event_name']").value;
-                    if (title) {
-                        calendar.addEvent({
-                            title: title,
-                            start: arg.start,
-                            end: arg.end,
-                            allDay: arg.allDay
-                        })
-                    }
-                    calendar.unselect()
-                } else if (result.dismiss === "cancel") {
-                    Swal.fire({
-                        text: "Event creation was declined!.",
-                        icon: "error",
-                        buttonsStyling: false,
-                        confirmButtonText: "Ok, got it!",
-                        customClass: {
-                            confirmButton: "btn btn-primary",
-                        }
-                    });
-                }
-            });
-        },
+    // 주간 배열
+    let arWeek = ["", "", "", "", "", "", ""];
 
-        // Delete event
-        eventClick: function (arg) {
-            Swal.fire({
-                text: "Are you sure you want to delete this event?",
-                icon: "warning",
-                showCancelButton: true,
-                buttonsStyling: false,
-                confirmButtonText: "Yes, delete it!",
-                cancelButtonText: "No, return",
-                customClass: {
-                    confirmButton: "btn btn-primary",
-                    cancelButton: "btn btn-active-light"
-                }
-            }).then(function (result) {
-                if (result.value) {
-                    arg.event.remove()
-                } else if (result.dismiss === "cancel") {
-                    Swal.fire({
-                        text: "Event was not deleted!.",
-                        icon: "error",
-                        buttonsStyling: false,
-                        confirmButtonText: "Ok, got it!",
-                        customClass: {
-                            confirmButton: "btn btn-primary",
-                        }
-                    });
-                }
-            });
-        },
-        dayMaxEvents: true, // allow "more" link when too many events
-        // 이벤트 객체 필드 document : https://fullcalendar.io/docs/event-object
-        events: [
-            {
-            title: 'All Day Event',
-            start: '2022-07-01'
-            },
-            {
-            title: 'Long Event',
-            start: '2022-07-07',
-            end: '2022-07-10'
-            },
-            {
-            groupId: 999,
-            title: 'Repeating Event',
-            start: '2022-07-09T16:00:00'
-            },
-            {
-            groupId: 999,
-            title: 'Repeating Event',
-            start: '2022-07-16T16:00:00'
-            },
-            {
-            title: 'Conference',
-            start: '2022-07-11',
-            end: '2022-07-13'
-            },
-            {
-            title: 'Meeting',
-            start: '2022-07-12T10:30:00',
-            end: '2022-07-12T12:30:00'
-            },
-            {
-            title: 'Lunch',
-            start: '2022-07-12T12:00:00'
-            },
-            {
-            title: 'Meeting',
-            start: '2022-07-12T14:30:00'
-            },
-            {
-            title: 'Happy Hour',
-            start: '2022-07-12T17:30:00'
-            },
-            {
-            title: 'Dinner',
-            start: '2022-07-12T20:00:00'
-            },
-            {
-            title: 'Birthday Party',
-            start: '2022-07-13T07:00:00'
-            },
-            {
-            title: 'Click for Google',
-            url: 'http://google.com/',
-            start: '2022-07-28'
-            }
-        ]
-    });
+    let weekYear = calendarYear;
+    let weekMonth = calendarMonth;
+    let weekDay = calendarToday;
 
-    calendar.render();
-});
+    // 현재 요일부터 주간 배열에 날짜를 추가
+    for (let index = calendarMonthTodayDay; index < 7; index++) {
+        arWeek[index] = weekYear +"-" + weekMonth + "-" + weekDay;
+        weekDay++;
+
+        // 날짜가 현재 월의 마지막 일보다 크면 다음 월의 1일로 변경
+        if (weekDay > calendarMonthLastDate) {
+            weekYear = nextMonthStartDate.getFullYear();
+            weekMonth = nextMonthStartDate.getMonth() + 1;
+            weekDay = 1;
+        }
+    }
+
+    weekYear = calendarYear;
+    weekMonth = calendarMonth;
+    weekDay = calendarToday;
+
+    // 현재 요일부터 꺼꾸로 주간 배열에 날짜를 추가
+    for (let index = calendarMonthTodayDay - 1; index >= 0; index--) {
+        weekDay--;
+        // 날짜가 현재 월의 1일이면 작으면 이전 월의 마지막 일로 변경
+        if (weekDay == 0) {
+            weekYear = prevMonthLastDate.getFullYear();
+            weekMonth = prevMonthLastDate.getMonth() + 1;
+            weekDay = prevMonthLastDate;
+        }
+        arWeek[index] = weekYear +"-" + weekMonth + "-" + weekDay;
+    }
+
+    // 오늘
+    const today = new Date();
+
+    // 달력 요일
+    const calendarDays = ["일", "월", "화", "수", "목", "금", "토",];
+
+    for (let index = 0; index < 7; index++) {
+        const arWeekDate = arWeek[index].split("-");
+        const year = arWeekDate[0];
+        const month = arWeekDate[1] < 10 ? "0" + arWeekDate[1] : arWeekDate[1];
+        const day = arWeekDate[2] < 10 ? "0" + arWeekDate[2] : arWeekDate[2];
+        const html = $('<div class="days-data" data-date='+ year + '-' + month + '-' + day + '>' +
+                            '<span class="day d-block fs-4 fw-bold rounded-circle">' + day +'</span>' +
+                            '<span class="name d-block">' + (index === calendarMonthTodayDay ? "오늘" : calendarDays[index] + "요일") + '</span>' +
+                        '</div>');
+
+        $('.days').append(html);
+    }
+})
+
+$(document).on('click', '.days-data', function() {
+    $('.days-data').each(function(index, item) {
+        $(item).removeClass('active');
+    })
+    $(this).addClass('active');
+})
