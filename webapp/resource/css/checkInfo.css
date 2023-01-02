@@ -1,0 +1,16 @@
+ol,ul {
+    list-style: none;  
+}
+#progressBar {
+    width: 600px !important;
+}
+
+
+
+#main {
+    height: 1350px !important;
+    width : 900px;
+}
+body table{
+    width: 300px !important;
+}

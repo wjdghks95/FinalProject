@@ -1,0 +1,29 @@
+
+ul,ol {
+    list-style-type: none;
+}
+
+#progressBar {
+    width: 600px !important;
+}
+
+#main {
+    height: 1350px !important;
+    width : 900px;
+}
+
+#inputFrm {
+    width: 700px;
+}
+
+#inputInfo {
+    width : 450px;
+}
+
+#exampleFormControlTextarea1 {
+    height: 500px;
+    width: 100%;
+}
+
+
+
