@@ -2,6 +2,10 @@ header li:hover button {
   font-weight: bold;
 }
 
+header li.active button {
+  font-weight: bold;
+}
+
 header a:hover {
   color: #00bbff !important;
 }
