@@ -108,3 +108,22 @@ ul {
     color: #fff;
     background-color: #00b4f5;
 }
+
+@font-face {
+    font-family: 'S-CoreDream-3Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'S-CoreDream-3Light';
+}
+
+.text-skip {
+    display:-webkit-box;
+    -webkit-line-clamp:3; /* 라인수 */
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+    text-overflow:ellipsis;
+}

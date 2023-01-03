@@ -1,75 +1,28 @@
-* {
-  margin: 0 auto;
-}
-
-.counseldiv {
-  text-align: center;
-  vertical-align: middle;
-  height: 50px;
-  line-height: 75px;
-  background-color: lightgray;
-}
-
-.counseldiv > a {
-  margin-left: 40px;
-  text-decoration: none;
-  color: black;
-}
-.counselfooter {
-}
 .counseldiv2 {
-  text-align: start;
-  width: 1400px;
-}
-.counseltable {
-  margin-left: 0;
-}
-.counseltr > td > a {
-  text-decoration: none;
-  color: black;
-  margin-left: 30px;
-}
-.counseltd {
-  margin-left: 30px;
-}
-.counseldiv3 {
-  margin-top: 30px;
-  display: flex;
-  width: 1400px;
-  height: 2000px;
-  position: relative;
-}
-.counseldiv3table {
-  width: 900px;
-}
-.counseldiv3table p{
-  border: 1px solid black;
+  width: 1080px;
 }
 
-.counseldiv3table2 {
-  display: flex;
-  align-items: baseline;
-  justify-self: start;
-  width: 500px;
-}
 .counseltableh3 {
   margin-top: 30px;
   margin-bottom: 30px;
 }
-.counseldiv3 .counseldiv3table a {
-  text-decoration: none;
-  color: black;
+
+.counseltable > li > a:hover {
+  color: #00bbff;
 }
-.counseldiv3 .counseldiv3table tr {
-  margin-bottom: 100px;
+
+.counseltable > li > a.active {
+  color: #00bbff;
 }
-.counseldiv3 .counseldiv3table2 a {
-  text-decoration: none;
-  color: black;
+
+.pagination > a.active {
+  color: #00bbff;
+  border-bottom: 2px solid #00bbff;
 }
-.counseldiv3Write {
-  position: absolute;
-  top: 800px;
-  left: 1300px;
+
+.writing {
   position: fixed;
+  right: calc(50% - 514px);
+  bottom: 33px;
+  cursor: pointer;
 }

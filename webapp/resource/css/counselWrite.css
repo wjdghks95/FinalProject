@@ -1,42 +1,43 @@
+ul {
+  list-style: initial;
+}
+
 #counselWriteh1 {
   margin-top: 50px;
   margin-bottom: 50px;
 }
-#counselWritehr1 {
-  margin-bottom: 50px;
-}
-#counselWriteh2 {
-  margin-bottom: 50px;
-  width: 800px;
-  text-align: start;
-}
+
 #counselWriteForm {
-  width: 800px;
+  width: 700px;
 }
+
 .counselWriteTable {
-  height: 300px;
-  width: 800px;
-  margin-bottom: 50px;
+  width: 100%;
+  margin-bottom: 40px;
 }
+
+textarea {
+  resize: none;
+}
+
+textarea::placeholder {
+  font-size: 14px;
+}
+
 #counselWriteh3 {
-  font-size: 18px;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
 }
+
 .counselWriteUl {
   font-size: 15px;
 }
+
 .counselWriteUlIn {
   font-size: 12px;
-  margin-top: 10px;
-  margin-bottom: 30px;
+  margin-top: 6px;
+  margin-bottom: 12px;
 }
-#counselWriteInput {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  width: 800px;
-  height: 50px;
-  font-size: 20px;
-  background-color: lightgrey;
-  color: white;
-  border: none;
+
+#agreement {
+  cursor: pointer;
 }
