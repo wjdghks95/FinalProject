@@ -1,29 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200&display=swap");
-
-html,
-body {
-  /* height: 100%; */
-}
-
-body {
-  display: grid;
-  place-items: center;
-  font-family: 맑은 고딕, Malgun Gothic;
-  background: white;
-}
-
 .card {
   position: relative;
   /* display: flex; */
   min-width: 0;
-  padding: 10px;
-  width: 550px;
+  padding: 0 40px !important;
+  width: 700px;
   height: 870px;
   word-wrap: break-word;
   background-color: #fff;
   background-clip: border-box;
   border-radius: 8px;
-  border: 1px solid #e0e0e0;
+  border: none;
 }
 
 .comment-box {
@@ -60,8 +46,6 @@ body {
 
 .rating {
   display: flex;
-  margin-left: 30px;
-  margin-top: 70px;
   flex-direction: row-reverse;
 }
 
@@ -104,7 +88,6 @@ body {
   font-size: 14px;
   letter-spacing: -0.5px;
   line-height: 14px;
-  margin-bottom: -8px;
   font-weight: bold;
   padding: 0;
 }
@@ -150,10 +133,6 @@ body {
 .pont-color {
   color: #dc3545;
 }
-.title-wrap {
-  height: 44px;
-  line-height: 44px;
-}
 .warning {
   margin-top: 10px;
 }
@@ -170,7 +149,7 @@ body {
   margin-top: -20px;
 }
 .pont-title {
-  font-weight: lighter;
+  font-weight: bold;
   color: #757575;
 }
 
@@ -181,11 +160,10 @@ body {
 .pic {
   border-radius: 50%;
   border: 1px solid silver;
-  margin-top: 10px;
-  margin-left: 20px;
 }
 .profile {
   display: flex;
+  align-items: flex-end;
 }
 .check-agree {
   color: #555;
@@ -220,12 +198,6 @@ body {
   box-sizing: border-box;
 }
 
-.container {
-  margin-left: 50px;
-  text-align: center;
-  overflow: hidden;
-}
-
 .box {
   padding: 4.5em 0;
   display: -webkit-flex;
@@ -240,11 +212,10 @@ body {
 
 /* Common button styles */
 .button {
-  float: left;
   min-width: 150px;
   max-width: 250px;
   display: block;
-  margin: 30px;
+  margin: 0 30px;
   padding: 1em 2em;
   border: none;
   background: none;
