@@ -30,3 +30,19 @@
 .days-data.disabled > .name {
     color: #b7b7b7;
 }
+
+.times > .time {
+    cursor: pointer;
+}
+
+.times > .time.active,
+.times > .time:hover {
+    color: #00bbff;
+    outline: 2px solid #00bbff;
+    background-color: #fff !important;
+    font-weight: bold;
+}
+
+.times > .time > small {
+    font-size: 12px;
+}
