@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="468e6b2e-d637-4410-a808-23817b48bde3" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.classpath" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.project" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/.jsdtscope" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.component" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.common.project.facet.core.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.jsdt.ui.superType.container" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.settings/org.eclipse.wst.jsdt.ui.superType.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/META-INF/MANIFEST.MF" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/WEB-INF/web.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/css/booking.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/css/chat.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/css/checkInfo.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/css/common.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/css/counseling.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/css/features.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/css/find-account.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/css/footer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/css/headers.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/css/in_post.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/css/knowledgeIN.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/css/list.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/css/productDetailPage.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/css/review.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/css/reviewList.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/css/sidebars.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/css/sign-in.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/css/sign-up.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/icon/blog.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/icon/chevron-down.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/icon/chevron-left.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/icon/chevron-right.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/icon/chevron-up.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/icon/emoji-smile-fill.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/icon/emoji-smile.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/icon/facebook.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/icon/instagram.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/icon/list.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/icon/pencil.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/icon/search.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/icon/send.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/icon/star-fill.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/icon/star.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/icon/x-lg.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/icon/youtube.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/img/heart-g98e2e4818_640.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/img/icon-g8eb1683d0_640.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/img/it_지식재산_금융.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/img/kakao_login.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/img/law-ge43439866_640.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/img/lawyer/lawyer1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/img/lawyer/lawyer2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/img/lawyer/lawyer3.jpeg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/img/lawyer/lawyer4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/img/lawyer/lawyer5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/img/lawyer/lawyer6.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/img/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/img/naver_login.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/img/paragraph-g97f0a4da9_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/img/profile.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/img/sample1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/img/scales-g490cc4998_640.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/img/가족.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/img/교통사고_범죄.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/img/금전_계약문제.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/img/기타민사문제.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/img/기타형사범죄.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/img/명예훼손_모욕.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/img/민사절차.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/img/부동산_임대차.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/img/성범죄.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/img/예약하기.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/img/의료_세금_행정.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/img/인물사진(상반신)1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/img/재산범죄.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/img/폭행_협박.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/img/형사절차.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/img/회사.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/js/booking.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/js/checkInfo.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/resource/js/counseling.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/views/booking.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/views/chat.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/views/chatList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/views/checkInfo.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/views/commentList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/views/counseling.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/views/find-account.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/views/in_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/views/in_post.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/views/knowledgeIN.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/views/list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/views/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/views/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/views/myPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/views/myPage_helpful.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/views/myPage_myBoard.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/views/productDetailPage.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/views/review.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/views/reviewList.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/views/sign-up-client.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/views/sign-up-landing.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webapp/views/sign-up-lawyer.html" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="2JqoZLF3zFoAm0G3tHVdq3ysTGY" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="468e6b2e-d637-4410-a808-23817b48bde3" name="Changes" comment="" />
+      <created>1672815031141</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1672815031141</updated>
+    </task>
+    <servers />
+  </component>
+</project>
