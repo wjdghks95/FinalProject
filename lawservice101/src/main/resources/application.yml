@@ -2,7 +2,7 @@ spring:
   # jsp 관련 설정
   mvc:
     view:
-      prefix: /WEB-INF/view/
+      prefix: /WEB-INF/views/
       suffix: .jsp
 
    # oracle 관련 설정
@@ -15,3 +15,9 @@ spring:
 # mybatis 관련 설정
 mybatis:
   mapper-locations: /mappers/*.xml # mapper.xml 위치 지정
+  type-aliases-package: com.kh.lawservice101.chat.model.vo
+
+  configuration:
+    map-underscore-to-camel-case: true # model 프로퍼티 camel case 설정
+    jdbc-type-for-null: varchar # ""값 null 처리
+
