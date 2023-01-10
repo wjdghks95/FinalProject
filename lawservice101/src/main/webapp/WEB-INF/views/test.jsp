@@ -13,9 +13,9 @@
     <!-- sidebar -->
     <jsp:include page="common/sidebars.jsp" />
 
-    <form action="insert.do" method="post">
-        name:<input name="name">
-        age:<input name="age">
+    <form action="/login" method="post">
+        아이디: <input type="text" name="id">
+        비밀번호: <input type="text" name="password">
         <input type="submit" value="제출">
     </form>
 
