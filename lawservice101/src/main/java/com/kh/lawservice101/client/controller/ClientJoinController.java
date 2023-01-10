@@ -14,7 +14,6 @@ public class ClientJoinController {
 
     @GetMapping("/clientJoin")
     public String client() {
-        System.out.println("ccc");
         return "clientJoin";
     }
 
