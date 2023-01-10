@@ -1,11 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>client</title>
+       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" defer></script>
+    <title>clientJoin</title>
+        <link href="/resource/css/sign-up.css" rel="stylesheet">
+        <link href="/resource/css/common.css" rel="stylesheet">
 
     <script type="text/javascript">
+
     function clientJoin(){
     if(confirm('저장하시겠습니까?')){
 
@@ -15,6 +20,7 @@
      }
     }
     </script>
+
 </head>
 <body>
 
@@ -56,14 +62,14 @@
 
                     <div class="form-group">
                         <label for="password" class="form-label">비밀번호</label>
-                        <input id="password" type="text" name="clientPwd" class="form-control" placeholder="비밀번호를 입력하세요" required>
+                        <input id="password" type="password" name="clientPwd" class="form-control" placeholder="비밀번호를 입력하세요" required>
                         <small id="passwordHelp" class="form-text text-muted">8~12자, 영문, 숫자, 특수문자(_-!@#$%^&*.,)</small>
                         <p class="form-text text-danger">비밀번호를 입력하세요</p>
                     </div>
 
                     <div class="form-group">
                         <label for="password-confirm" class="form-label">비밀번호 재확인</label>
-                        <input id="password-confirm" type="text"  name="clientRepwd" class="form-control" placeholder="비밀번호를 다시 한 번 입력하세요" required>
+                        <input id="password-confirm" type="password"  name="clientRepwd" class="form-control" placeholder="비밀번호를 다시 한 번 입력하세요" required>
                         <p class="form-text text-danger">비밀번호가 일치하지않습니다</p>
                     </div>
 
@@ -79,8 +85,9 @@
                     <div class="form-group">
                         <label for="birth-year" class="form-label">출생년도</label>
                         <select id="birth-year" name="clientBirthyy" class="form-select">
-                            <option value="1950">1950</option>
-                            <option value="2022">2022</option>
+                           <%for (int i=1930; i<=2023;i++){%>
+                            <option value="<%=i%>"><%=i+"년"%></option>
+                            <%}%>
                         </select>
                     </div>
                     <p></p>

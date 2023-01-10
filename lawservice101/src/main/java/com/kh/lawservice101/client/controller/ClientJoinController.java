@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 @RequiredArgsConstructor
-public class ClientController {
+public class ClientJoinController {
     private final ClientDAO clientDAO;
 
     @GetMapping("/client/")
