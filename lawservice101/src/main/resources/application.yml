@@ -1,0 +1,23 @@
+spring:
+  # jsp 관련 설정
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+
+   # oracle 관련 설정
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521/xe
+    username: finalpro
+    password: 1234
+
+# mybatis 관련 설정
+mybatis:
+  mapper-locations: /mappers/*.xml # mapper.xml 위치 지정
+  type-aliases-package: com.kh.lawservice101.chat.model.vo
+
+  configuration:
+    map-underscore-to-camel-case: true # model 프로퍼티 camel case 설정
+    jdbc-type-for-null: varchar # ""값 null 처리
+
