@@ -1,165 +1,287 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" defer></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      defer
+    ></script>
     <title>변호사 회원 가입 | 법률서비스 101</title>
 
-    <link href="../resource/css/sign-up.css" rel="stylesheet">
-    <link href="../resource/css/common.css" rel="stylesheet">
-    
-</head>
-<body class="bg-body-tertiary">
+    <link href="../resource/css/sign-up.css" rel="stylesheet" />
+    <link href="../resource/css/common.css" rel="stylesheet" />
+  </head>
+  <body class="bg-body-tertiary">
     <main class="form-signup m-auto">
-        <div class="container">
-            <div class="py-5 text-center">
-                <h2>변호사 회원 가입</h2>
+      <div class="container">
+        <div class="py-5 text-center">
+          <h2>변호사 회원 가입</h2>
+        </div>
+        <div class="row justify-content-center">
+          <form class="needs-validation" action="" method="post">
+            <h5><strong>계정정보</strong></h5>
+
+            <div class="form-group">
+              <label for="email" class="form-label">이메일</label>
+              <input
+                id="email"
+                type="text"
+                name="email"
+                class="form-control"
+                placeholder="이메일을 입력하세요"
+                required
+              />
+              <small id="emailHelp" class="form-text text-muted"
+                >예) name@example.com</small
+              >
+              <p class="form-text text-danger">이메일을 입력하세요</p>
             </div>
-            <div class="row justify-content-center">
-                <form class="needs-validation" action="" method="post">
 
-                    <h5><strong>계정정보</strong></h5>
+            <div class="form-group">
+              <label for="id" class="form-label">아이디</label>
+              <input
+                id="id"
+                type="text"
+                name="id"
+                class="form-control"
+                placeholder="이메일을 입력하세요"
+                required
+              />
+              <small id="idHelp" class="form-text text-muted"
+                >6~10자, 영문, 숫자</small
+              >
+              <p class="form-text text-danger">아이디를 입력하세요</p>
+            </div>
 
-                    <div class="form-group">
-                        <label for="email" class="form-label">이메일</label>
-                        <input id="email" type="text" name="email" class="form-control" placeholder="이메일을 입력하세요" required>
-                        <small id="emailHelp" class="form-text text-muted">예) name@example.com</small>
-                        <p class="form-text text-danger">이메일을 입력하세요</p>
-                    </div>
+            <div class="form-group">
+              <label for="name" class="form-label">이름</label>
+              <input
+                id="name"
+                type="text"
+                name="name"
+                class="form-control"
+                placeholder="이름을 입력하세요"
+                required
+              />
+              <p class="form-text text-danger">이름을 입력하세요</p>
+            </div>
 
-                    <div class="form-group">
-                        <label for="id" class="form-label">아이디</label>
-                        <input id="id" type="text" name="id" class="form-control" placeholder="이메일을 입력하세요" required>
-                        <small id="idHelp" class="form-text text-muted">6~10자, 영문, 숫자</small>
-                        <p class="form-text text-danger">아이디를 입력하세요</p>
-                    </div>
+            <div class="form-group">
+              <label for="password" class="form-label">비밀번호</label>
+              <input
+                id="password"
+                type="text"
+                name="pwd"
+                class="form-control"
+                placeholder="비밀번호를 입력하세요"
+                required
+              />
+              <small id="passwordHelp" class="form-text text-muted"
+                >8~12자, 영문, 숫자, 특수문자(_-!@#$%^&*.,)</small
+              >
+              <p class="form-text text-danger">비밀번호를 입력하세요</p>
+            </div>
 
-                    <div class="form-group">
-                        <label for="name" class="form-label">이름</label>
-                        <input id="name" type="text" name="name" class="form-control" placeholder="이름을 입력하세요" required>
-                        <p class="form-text text-danger">이름을 입력하세요</p>
-                    </div>
+            <div class="form-group">
+              <label for="password-confirm" class="form-label"
+                >비밀번호 재확인</label
+              >
+              <input
+                id="password-confirm"
+                type="text"
+                class="form-control"
+                placeholder="비밀번호를 다시 한 번 입력하세요"
+                required
+              />
+              <p class="form-text text-danger">비밀번호가 일치하지않습니다</p>
+            </div>
 
-                    <div class="form-group">
-                        <label for="password" class="form-label">비밀번호</label>
-                        <input id="password" type="text" name="pwd" class="form-control" placeholder="비밀번호를 입력하세요" required>
-                        <small id="passwordHelp" class="form-text text-muted">8~12자, 영문, 숫자, 특수문자(_-!@#$%^&*.,)</small>
-                        <p class="form-text text-danger">비밀번호를 입력하세요</p>
-                    </div>
+            <div class="form-group">
+              <label for="gender" class="form-label">성별</label>
+              <select id="gender" name="gender" class="form-select">
+                <option value="male">남</option>
+                <option value="female">여</option>
+              </select>
+            </div>
+            <p></p>
 
-                    <div class="form-group">
-                        <label for="password-confirm" class="form-label">비밀번호 재확인</label>
-                        <input id="password-confirm" type="text" class="form-control" placeholder="비밀번호를 다시 한 번 입력하세요" required>
-                        <p class="form-text text-danger">비밀번호가 일치하지않습니다</p>
-                    </div>
+            <div class="form-group">
+              <label for="birth-year" class="form-label">출생년도</label>
+              <select id="birth-year" name="birthYear" class="form-select">
+                <option value="1950">1950</option>
+                <option value="2022">2022</option>
+              </select>
+            </div>
+            <p></p>
 
-                    <div class="form-group">
-                        <label for="gender" class="form-label">성별</label>
-                        <select id="gender" name="gender" class="form-select">
-                            <option value="male">남</option>
-                            <option value="female">여</option>
-                        </select>
-                    </div>
-                    <p></p>
+            <div class="form-group">
+              <label for="phone" class="form-label">전화번호</label>
+              <div class="input-group">
+                <input
+                  id="phone"
+                  type="text"
+                  name="phone"
+                  class="form-control col me-3 rounded-2"
+                  placeholder="휴대폰 번호를 입력하세요"
+                  required
+                />
+                <span class="input-group-btn">
+                  <button type="button" class="btn btn-custom col">
+                    인증번호 발송
+                  </button>
+                </span>
+              </div>
+              <small id="phoneHelp" class="form-text text-muted"
+                >예) 01012345678</small
+              >
+              <p class="form-text text-danger">휴대폰 번호를 입력하세요</p>
+            </div>
 
-                    <div class="form-group">
-                        <label for="birth-year" class="form-label">출생년도</label>
-                        <select id="birth-year" name="birthYear" class="form-select">
-                            <option value="1950">1950</option>
-                            <option value="2022">2022</option>
-                        </select>
-                    </div>
-                    <p></p>
+            <div class="form-group">
+              <label for="auth-code" class="form-label">인증번호</label>
+              <div class="input-group">
+                <input
+                  id="auth-code"
+                  type="text"
+                  class="form-control me-3 rounded-2"
+                  placeholder="인증번호를 입력하세요"
+                  required
+                />
+                <span class="input-group-btn">
+                  <button type="button" class="btn btn-custom col">인증</button>
+                </span>
+              </div>
+              <p class="form-text text-danger">인증번호가 일치하지않습니다</p>
+            </div>
 
-                    <div class="form-group">
-                        <label for="phone" class="form-label">전화번호</label>
-                        <div class="input-group">
-                            <input id="phone" type="text" name="phone" class="form-control col me-3 rounded-2" placeholder="휴대폰 번호를 입력하세요" required>
-                            <span class="input-group-btn">
-                                <button type="button" class="btn btn-custom col">인증번호 발송</button>
-                            </span>
-                        </div>
-                        <small id="phoneHelp" class="form-text text-muted">예) 01012345678</small>
-                        <p class="form-text text-danger">휴대폰 번호를 입력하세요</p>
-                    </div>
+            <h5><strong>인증정보</strong></h5>
 
-                    <div class="form-group">
-                        <label for="auth-code" class="form-label">인증번호</label>
-                        <div class="input-group">
-                            <input id="auth-code" type="text" class="form-control me-3 rounded-2" placeholder="인증번호를 입력하세요" required>
-                            <span class="input-group-btn">
-                                <button type="button" class="btn btn-custom col">인증</button>
-                            </span>
-                        </div>
-                        <p class="form-text text-danger">인증번호가 일치하지않습니다</p>
-                    </div>
+            <div class="form-group">
+              <label for="company" class="form-label"
+                >소속(사무소, 회사명)</label
+              >
+              <input
+                id="company"
+                type="text"
+                name="company"
+                class="form-control"
+                placeholder="사무소명을 입력하세요"
+                required
+              />
+              <p class="form-text text-danger">사무소명을 입력하세요</p>
+            </div>
 
-                    <h5><strong>인증정보</strong></h5>
+            <div class="form-group">
+              <label for="tel" class="form-label">소속 전화번호</label>
+              <input
+                id="tel"
+                type="text"
+                name="tel"
+                class="form-control"
+                placeholder="소속 전화번호를 입력하세요"
+                required
+              />
+              <p class="form-text text-danger">소속 전화번호를 입력하세요</p>
+            </div>
 
-                    <div class="form-group">
-                        <label for="company" class="form-label">소속(사무소, 회사명)</label>
-                        <input id="company" type="text" name="company" class="form-control" placeholder="사무소명을 입력하세요" required>
-                        <p class="form-text text-danger">사무소명을 입력하세요</p>
-                    </div>
+            <div class="form-group">
+              <label class="form-label">소속 주소</label>
+              <div class="input-group">
+                <input
+                  id="zipcode"
+                  type="text"
+                  name="zipcode"
+                  class="form-control mb-1 me-3 rounded-2"
+                  placeholder="우편번호"
+                  required
+                  readonly
+                />
+                <span class="input-group-btn">
+                  <button type="button" class="btn btn-custom col">
+                    주소검색
+                  </button>
+                </span>
+              </div>
+              <input
+                id="addr"
+                type="text"
+                name="addr"
+                class="form-control mb-1"
+                placeholder="주소"
+                required
+                readonly
+              />
+              <input
+                id="detail-addr"
+                type="text"
+                name="detailAddr"
+                class="form-control"
+                placeholder="상세주소"
+                required
+              />
+              <p class="form-text text-danger">사무소명을 입력하세요</p>
+            </div>
 
-                    <div class="form-group">
-                        <label for="tel" class="form-label">소속 전화번호</label>
-                        <input id="tel" type="text" name="tel" class="form-control" placeholder="소속 전화번호를 입력하세요" required>
-                        <p class="form-text text-danger">소속 전화번호를 입력하세요</p>
-                    </div>
+            <div class="form-group">
+              <label for="" class="form-label">변호사 등록번호</label>
+              <div class="input-group">
+                <input
+                  id="registNum"
+                  type="text"
+                  name="registNum"
+                  class="form-control me-3 rounded-2"
+                  placeholder="변호사 등록번호를 입력하세요"
+                  required
+                />
+                <span class="input-group-btn">
+                  <button type="button" class="btn btn-custom col">인증</button>
+                </span>
+              </div>
+              <p class="form-text text-danger">변호사 등록번호를 입력하세요</p>
+            </div>
 
-                    <div class="form-group">
-                        <label class="form-label">소속 주소</label>
-                        <div class="input-group">
-                            <input id="zipcode" type="text" name="zipcode" class="form-control mb-1 me-3 rounded-2" placeholder="우편번호" required readonly>
-                            <span class="input-group-btn">
-                                <button type="button" class="btn btn-custom col">주소검색</button>
-                            </span>
-                        </div>
-                        <input id="addr" type="text" name="addr" class="form-control mb-1" placeholder="주소" required readonly>
-                        <input id="detail-addr" type="text" name="detailAddr" class="form-control" placeholder="상세주소" required>
-                        <p class="form-text text-danger">사무소명을 입력하세요</p>
-                    </div>
-
-                    <div class="form-group">
-                        <label for="" class="form-label">변호사 등록번호</label>
-                        <div class="input-group">
-                            <input id="registNum" type="text" name="registNum" class="form-control me-3 rounded-2" placeholder="변호사 등록번호를 입력하세요" required>
-                            <span class="input-group-btn">
-                                <button type="button" class="btn btn-custom col">인증</button>
-                            </span>
-                        </div>
-                        <p class="form-text text-danger">변호사 등록번호를 입력하세요</p>
-                    </div>
-
-                    <div class="form-group">
-                        <h5><strong>약관동의</strong></h5>
-                        <ul class="join_box">
-                            <li class="checkBox check01">
-                                <ul class="clearfix">
-                                    <label>
-                                        <li>다음에 모두 동의합니다.<br>
-                                        <small>서비스 이용약관, 개인정보 취급방침, 개인정보 이용/수집, 프로모션 정보 수신에 모두 동의함을 의미합니다.</small>
-                                        </li>
-                                        <li class="checkAllBtn">
-                                            <input type="checkbox" name="chkAll" id="chk" class="chkAll">
-                                        </li>
-                                    </label>
-                                </ul>
-                            </li>
-                            <li class="checkBox check02">
-                                <ul class="clearfix">
-                                    <label>
-                                        <li>이용약관 동의(필수)</li>
-                                        <li class="checkBtn">
-                                            <input type="checkbox" name="chk"> 
-                                        </li>
-                                    </label>
-                                </ul>
-                                <textarea name="" id="">로톡 서비스 이용약관
+            <div class="form-group">
+              <h5><strong>약관동의</strong></h5>
+              <ul class="join_box">
+                <li class="checkBox check01">
+                  <ul class="clearfix">
+                    <label>
+                      <li>
+                        다음에 모두 동의합니다.<br />
+                        <small
+                          >서비스 이용약관, 개인정보 취급방침, 개인정보
+                          이용/수집, 프로모션 정보 수신에 모두 동의함을
+                          의미합니다.</small
+                        >
+                      </li>
+                      <li class="checkAllBtn">
+                        <input
+                          type="checkbox"
+                          name="chkAll"
+                          id="chk"
+                          class="chkAll"
+                        />
+                      </li>
+                    </label>
+                  </ul>
+                </li>
+                <li class="checkBox check02">
+                  <ul class="clearfix">
+                    <label>
+                      <li>이용약관 동의(필수)</li>
+                      <li class="checkBtn">
+                        <input type="checkbox" name="chk" />
+                      </li>
+                    </label>
+                  </ul>
+                  <textarea name="" id="">
+로톡 서비스 이용약관
 [제1장] 총칙
 제1조 (목적)
 본 약관은 로앤컴퍼니(이하 ‘회사’)가 제공하는 로톡(LawTalk) 서비스(이하 ‘서비스’) 를 이용함에 있어 회사와 회원과의 권리, 의무 및 책임사항, 기타 필요한 사항을 규정함을 목적으로 한다.
@@ -400,18 +522,20 @@
 2021년 2월 19일 개정 - 확인하기
 2020년 9월 18일 개정 - 확인하기
 2020년 7월 30일 개정 - 확인하기
-2020년 5월 1일 제정 - 확인하기</textarea>
-                            </li>
-                            <li class="checkBox check03">
-                                <ul class="clearfix">
-                                    <label>
-                                        <li>개인정보 수집 및 이용에 대한 안내(필수)</li>
-                                        <li class="checkBtn">
-                                            <input type="checkbox" name="chk">
-                                        </li>
-                                    </label>
-                                </ul>
-                                <textarea name="" id="">개인정보 수집 및 이용 동의서
+2020년 5월 1일 제정 - 확인하기</textarea
+                  >
+                </li>
+                <li class="checkBox check03">
+                  <ul class="clearfix">
+                    <label>
+                      <li>개인정보 수집 및 이용에 대한 안내(필수)</li>
+                      <li class="checkBtn">
+                        <input type="checkbox" name="chk" />
+                      </li>
+                    </label>
+                  </ul>
+                  <textarea name="" id="">
+개인정보 수집 및 이용 동의서
 회원 가입을 위하여 아래의 개인정보 수집 및 이용에 대한 내용을 자세히 읽어 보신 후 동의 여부를 결정하여 주시기 바랍니다.
 
 1. 개인정보 수집항목
@@ -474,18 +598,20 @@ PC웹, 모바일웹/앱 이용과정에서의 단말기정보(OS, 화면사이�
 
 위와 같이 개인정보를 수집, 이용하는데 동의를 거부할 권리가 있습니다. 그러나 동의를 거부할 경우 서비스의 제공을 받으실 수 없습니다.
 
-더 자세한 내용에 대해서는 로톡 개인정보처리방침을 참고하시기 바랍니다.</textarea>
-                            </li>
-                            <li class="checkBox check03">
-                                <ul class="clearfix">
-                                    <label>
-                                        <li>개인정보 취급방침 동의(필수)</li>
-                                        <li class="checkBtn">
-                                            <input type="checkbox" name="chk">
-                                        </li>
-                                    </label>
-                                </ul>
-                                <textarea name="" id="">회사의 개인정보처리방침의 목차는 아래와 같습니다.
+더 자세한 내용에 대해서는 로톡 개인정보처리방침을 참고하시기 바랍니다.</textarea
+                  >
+                </li>
+                <li class="checkBox check03">
+                  <ul class="clearfix">
+                    <label>
+                      <li>개인정보 취급방침 동의(필수)</li>
+                      <li class="checkBtn">
+                        <input type="checkbox" name="chk" />
+                      </li>
+                    </label>
+                  </ul>
+                  <textarea name="" id="">
+회사의 개인정보처리방침의 목차는 아래와 같습니다.
 1. 개인정보 처리방침의 의의
 2. 개인정보 수집항목 및 수집방법
 3. 서비스 이용 중 자동으로 수집되는 정보
@@ -825,26 +951,31 @@ Chrome의 경우: 웹 브라우저 우측의 설정 메뉴 > 화면 하단의 �
 2021년 4월 5일 개정 - 확인하기
 2021년 3월 5일 개정 - 확인하기
 2020년 7월 30일 개정 - 확인하기
-2015년 11월 20일 제정 - 확인하기</textarea>
-                            </li>
-                            <li class="checkBox check04">
-                                <ul class="clearfix">
-                                    <label>
-                                        <li>이벤트 등 프로모션 알림 메일 수신(선택)</li>
-                                        <li class="checkBtn">
-                                            <input type="checkbox" name="chk">
-                                        </li>
-                                    </label>
-                                </ul>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <p class="info-text text-body-secondary">* 가입 신청을 하시면 변호사 자격 확인 후 가입이 완료됩니다.</p>
-                    <button type="button" class="btn btn-custom" style="width: 100%;">가입신청</button>
-                </form>
+2015년 11월 20일 제정 - 확인하기</textarea
+                  >
+                </li>
+                <li class="checkBox check04">
+                  <ul class="clearfix">
+                    <label>
+                      <li>이벤트 등 프로모션 알림 메일 수신(선택)</li>
+                      <li class="checkBtn">
+                        <input type="checkbox" name="chk" />
+                      </li>
+                    </label>
+                  </ul>
+                </li>
+              </ul>
             </div>
+
+            <p class="info-text text-body-secondary">
+              * 가입 신청을 하시면 변호사 자격 확인 후 가입이 완료됩니다.
+            </p>
+            <button type="button" class="btn btn-custom" style="width: 100%">
+              가입신청
+            </button>
+          </form>
         </div>
+      </div>
     </main>
-</body>
+  </body>
 </html>

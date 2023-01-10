@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      @keyframes aa {
+        0%,
+        100% {
+          opacity: 0; /* minimum opacity */
+        }
+        1% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes aa {
+        0%,
+        39%,
+        100% {
+          opacity: 0.25; /* minimum opacity */
+        }
+        40% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes aa {
+        0%,
+        100% {
+          opacity: 0.22; /* minimum opacity */
+        }
+        1% {
+          opacity: 1;
+        }
+      }
+
+      @keyframes aa {
+        0%,
+        25%,
+        100% {
+          /* minimum scale and opacity */
+          transform: scale(0.5);
+          opacity: 0.25;
+        }
+        26% {
+          transform: scale(1);
+          opacity: 1;
+        }
+      }
+      .aa {
+        height: 70px;
+        width: 70px;
+        border-radius: 50%;
+        border: dashed 5px black;
+        animation-name: spinner;
+        animation-duration: 1.5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="aa"></div>
+  </body>
+</html>
