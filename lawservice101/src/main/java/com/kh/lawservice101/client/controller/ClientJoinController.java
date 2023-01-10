@@ -12,19 +12,15 @@ import org.springframework.web.bind.annotation.RequestParam;
 public class ClientJoinController {
     private final ClientDAO clientDAO;
 
-    @GetMapping("/client/")
+    @GetMapping("/clientJoin")
     public String client() {
-        return "client";
+        System.out.println("ccc");
+        return "clientJoin";
     }
-
 
     @PostMapping("/client/insert.do")
     public String insert(@RequestParam String clientId, @RequestParam String clientPwd, @RequestParam String clientName, @RequestParam String clientBirthyy, @RequestParam String clientGender, @RequestParam String clientEmail, @RequestParam String clientPhone) {
         clientDAO.insert(clientId, clientPwd, clientName, clientBirthyy, clientGender, clientEmail, clientPhone);
-        return "redirect:/client/";
+        return "redirect:/clientJoin";
     }
-
-
-
-
 }

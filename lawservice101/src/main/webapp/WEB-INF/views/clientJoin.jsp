@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" defer></script>
+
     <title>clientJoin</title>
+
         <link href="/resource/css/sign-up.css" rel="stylesheet">
         <link href="/resource/css/common.css" rel="stylesheet">
 
     <script type="text/javascript">
 
     function clientJoin(){
-    if(confirm('저장하시겠습니까?')){
+    if(confirm('가입하시겠습니까?')){
 
     document.getElementById('clientJoinForm').setAttribute('action', '/client/insert.do');
     document.getElementById('clientJoinForm').submit();
@@ -23,12 +25,6 @@
 
 </head>
 <body>
-
-    <!-- header -->
-
-
-    <!-- sidebar -->
-
 
   <main class="form-signup m-auto">
         <div class="container">
@@ -76,8 +72,8 @@
                     <div class="form-group">
                         <label for="gender" class="form-label">성별</label>
                         <select id="gender" name="clientGender" class="form-select">
-                            <option value="m">남</option>
-                            <option value="f">여</option>
+                            <option value="M">남</option>
+                            <option value="F">여</option>
                         </select>
                     </div>
                     <p></p>
