@@ -2,4 +2,17 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
+<<<<<<< HEAD
 <mapper namespace="com.kh.lawservice101.test.model.dao.TestDAO"></mapper>
+=======
+<mapper namespace="com.kh.lawservice101.chat.model.dao.ChatRoomDao">
+    <resultMap id="testResultTest" type="com.kh.lawservice101.test.model.vo.Test">
+        <result property="id" column="id"/>
+        <result property="password" column="password"/>
+    </resultMap>
+
+    <select id="selectTest" resultType="com.kh.lawservice101.test.model.vo.Test" resultMap="testResultTest">
+        SELECT * FROM test WHERE id = #{id} AND password = #{password}
+    </select>
+</mapper>
+>>>>>>> feature/Jhwan
