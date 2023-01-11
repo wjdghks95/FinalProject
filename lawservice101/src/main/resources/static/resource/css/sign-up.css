@@ -1,45 +1,79 @@
 body {
-    padding-top: 40px;
-    padding-bottom: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .form-signup {
-    max-width: 440px;
+  max-width: 440px;
 }
 
 ul {
-    padding: 6px 4px;
+  padding: 6px 4px;
 }
 
 ul.join_box {
-    border: 1px solid #ddd; background-color: #fff;
+  border: 1px solid #ddd;
+  background-color: #fff;
 }
 
-.checkBox, .checkBox > ul {
-    position: relative;
+.checkBox,
+.checkBox > ul {
+  position: relative;
 }
 
 .checkBox > ul > li {
-    float: left;
+  float: left;
 }
 
 .checkBox > ul > label {
-    cursor: pointer;
-    width: 100%;
+  cursor: pointer;
+  width: 100%;
 }
 
 .checkBox > ul > label > li:first-child {
-    width: 85%; padding: 15px; font-weight: 600; color: #888;
+  width: 85%;
+  padding: 15px;
+  font-weight: 600;
+  color: #888;
 }
 
 .checkBox > ul > label > li:nth-child(2) {
-    position: absolute; top: 50%; right: 30px; margin-top: -12px;
+  position: absolute;
+  top: 50%;
+  right: 30px;
+  margin-top: -12px;
 }
 
 .checkBox textarea {
-    width: 96%; height: 90px; margin: 0 2%; background-color: #f7f7f7; color: #888; border: none;
+  width: 96%;
+  height: 90px;
+  margin: 0 2%;
+  background-color: #f7f7f7;
+  color: #888;
+  border: none;
 }
 
 .info-text {
-    font-size: 14px !important;
+  font-size: 14px !important;
+}
+
+.spinning {
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: #00d8ff;
+  top: 1735px;
+  left: 1100px;
+}
+.fa-spinner {
+  width: 30px;
+  height: 30px;
+}
+.lawyerEmail,
+.lawyerId,
+.lawyerName,
+.lawyerPassword,
+.lawyerPasswordConfirm {
+  opacity: 0;
 }

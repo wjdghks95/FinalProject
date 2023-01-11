@@ -12,6 +12,10 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       defer
     ></script>
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
+    <script src="../resource/js/jquery-3.6.1.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
+    <script src="../resource/js/sign-up-lawyer.js"></script>
     <title>변호사 회원 가입 | 법률서비스 101</title>
 
     <link href="../resource/css/sign-up.css" rel="stylesheet" />
@@ -31,7 +35,7 @@
               <label for="email" class="form-label">이메일</label>
               <input
                 id="email"
-                type="text"
+                type="email"
                 name="email"
                 class="form-control"
                 placeholder="이메일을 입력하세요"
@@ -40,7 +44,9 @@
               <small id="emailHelp" class="form-text text-muted"
                 >예) name@example.com</small
               >
-              <p class="form-text text-danger">이메일을 입력하세요</p>
+              <p class="form-text text-danger lawyerEmail">
+                이메일 형식에 맞지 않습니다.
+              </p>
             </div>
 
             <div class="form-group">
@@ -50,13 +56,15 @@
                 type="text"
                 name="id"
                 class="form-control"
-                placeholder="이메일을 입력하세요"
+                placeholder="아이디를 입력하세요"
                 required
               />
               <small id="idHelp" class="form-text text-muted"
                 >6~10자, 영문, 숫자</small
               >
-              <p class="form-text text-danger">아이디를 입력하세요</p>
+              <p class="form-text text-danger lawyerId">
+                아이디 형식에 맞지 않습니다.
+              </p>
             </div>
 
             <div class="form-group">
@@ -69,14 +77,19 @@
                 placeholder="이름을 입력하세요"
                 required
               />
-              <p class="form-text text-danger">이름을 입력하세요</p>
+              <small id="idHelp" class="form-text text-muted"
+                >2~16자, 영문, 숫자</small
+              >
+              <p class="form-text text-danger lawyerName">
+                이름 형식에 맞지 않습니다.
+              </p>
             </div>
 
             <div class="form-group">
               <label for="password" class="form-label">비밀번호</label>
               <input
                 id="password"
-                type="text"
+                type="password"
                 name="pwd"
                 class="form-control"
                 placeholder="비밀번호를 입력하세요"
@@ -85,7 +98,9 @@
               <small id="passwordHelp" class="form-text text-muted"
                 >8~12자, 영문, 숫자, 특수문자(_-!@#$%^&*.,)</small
               >
-              <p class="form-text text-danger">비밀번호를 입력하세요</p>
+              <p class="form-text text-danger lawyerPassword">
+                비밀번호가 형식에 맞지 않습니다.
+              </p>
             </div>
 
             <div class="form-group">
@@ -94,12 +109,14 @@
               >
               <input
                 id="password-confirm"
-                type="text"
+                type="password"
                 class="form-control"
                 placeholder="비밀번호를 다시 한 번 입력하세요"
                 required
               />
-              <p class="form-text text-danger">비밀번호가 일치하지않습니다</p>
+              <p class="form-text text-danger lawyerPasswordConfirm">
+                비밀번호가 일치하지않습니다
+              </p>
             </div>
 
             <div class="form-group">
@@ -975,6 +992,9 @@ Chrome의 경우: 웹 브라우저 우측의 설정 메뉴 > 화면 하단의 �
             </button>
           </form>
         </div>
+      </div>
+      <div class="spinning">
+        <i class="fas fa-spinner fa-10x fa-spin"></i>
       </div>
     </main>
   </body>

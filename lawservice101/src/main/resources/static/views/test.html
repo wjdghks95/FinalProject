@@ -1,68 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <script src="https://use.fontawesome.com/releases/v5.2.0/js/all.js"></script>
     <style>
-      @keyframes aa {
-        0%,
-        100% {
-          opacity: 0; /* minimum opacity */
-        }
-        1% {
-          opacity: 1;
-        }
-      }
-
-      @keyframes aa {
-        0%,
-        39%,
-        100% {
-          opacity: 0.25; /* minimum opacity */
-        }
-        40% {
-          opacity: 1;
-        }
-      }
-
-      @keyframes aa {
-        0%,
-        100% {
-          opacity: 0.22; /* minimum opacity */
-        }
-        1% {
-          opacity: 1;
-        }
-      }
-
-      @keyframes aa {
-        0%,
-        25%,
-        100% {
-          /* minimum scale and opacity */
-          transform: scale(0.5);
-          opacity: 0.25;
-        }
-        26% {
-          transform: scale(1);
-          opacity: 1;
-        }
-      }
-      .aa {
-        height: 70px;
-        width: 70px;
-        border-radius: 50%;
-        border: dashed 5px black;
-        animation-name: spinner;
-        animation-duration: 1.5s;
-        animation-iteration-count: infinite;
-        animation-timing-function: linear;
+      /* html,
+      body {
+        width: 100%;
+        height: 100%;
+        margin: 0;
+      } */
+      .container {
+        width: 150px;
+        height: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
       }
     </style>
   </head>
   <body>
-    <div class="aa"></div>
+    <div class="spinning">
+      <i class="fas fa-spinner fa-10x fa-spin"></i>
+    </div>
   </body>
 </html>

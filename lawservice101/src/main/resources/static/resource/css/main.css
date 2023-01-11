@@ -13,3 +13,9 @@
 .category > a:hover img {
   transform: scale(1.1);
 }
+.searchForm {
+  position: relative;
+}
+.sidebar {
+  display: none;
+}
